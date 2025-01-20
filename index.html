@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITech Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Assests/logo.svg" type="image/x-icon">
     <!--External Imports For Using Fonts and Icons-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,12 +33,18 @@
                     <img src="./Assests/logo.svg" alt="Logo">
                 </div>
                 <ul>
-                    <li>Home<span class="material-symbols-outlined">
-                        keyboard_arrow_down
-                        </span></li>
-                    <li>Pages<span class="material-symbols-outlined">
-                        keyboard_arrow_down
-                        </span></li></li>
+                    <div class="GroupNav-Home">
+                        <li>Home</li>
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                            </span>
+                    </div>
+                    <div class="GroupNav-Page">
+                        <li>Pages</li>
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
                     <li>Portfolio</li>
                     <li>Blog</li>
                     <li>Contact</li>
@@ -56,18 +63,18 @@
                     <h6>No Coding required to make customization. the live customizer <br> has everything you need.</h6>
                     <div id="circle"></div>
                     <div id="NoteroPromoSectionbuttons">
-                        <div id="download_app">
+                        <button onclick="DownloadButton()" id="download_app">
                             <img src="./Assests/Apple Logo.png" alt="Apple Logo">
                             <p>|  Download App</p>
-                        </div>
+                        </button>
                         <div class="hero_btn">
-                            <img  src="./Assests/Ellipse 7.png" alt="Play">
+                            <button onclick="Playing()" class="PlayBtn"><img  src="./Assests/Ellipse 7.png" alt="Play"></button>
                             <p>View <br>Promotion</p>
                         </div>                       
                     </div>
                     <div id="NoteroPromoSectionbuttons">
                         <div class="hero_btn" >
-                            <img src="./Assests/Ellipse 8.svg" alt="Apple Logo">
+                                <img src="./Assests/Ellipse 8.svg" alt="">
                             <p>View Promotion</p>
                         </div>
                         <div class="hero_btn">
@@ -169,9 +176,9 @@
                             <img src="./Assests/receive.svg" alt="Image">
                             <p>Filtering notes using matched keywords</p>
                         </div>
-                        <div class="btn_register">
+                        <button onclick="FreeRegister()" class="btn_register">
                             <p>Free Register </p>
-                        </div>
+                        </button>
                     </div>
                     
 
@@ -202,11 +209,11 @@
                             <span  class="material-symbols-outlined">keyboard_arrow_down</span>
                         </div>
                     </div>
-                    <div class="Chrome">
+                    <a href="https://shorturl.at/vxvpr" target="_blank" class="Chrome">
                         <img src="./Assests/Chrome.svg" alt="Chrome">
                         <h2>|</h2>
                         <p>Available In The <br> <span>Chrome Web Store </span> </p>
-                    </div>
+                    </a>
 
                 </div>
                 <div class="ImageBlock">
@@ -238,11 +245,10 @@
                         <li>Save energy for your device</li>
                         <li>Easy to switch between light and dark mode</li>
                     </ul>
-                    <div id="btn_discovery">
+                    <button onclick="Discovery()" id="btn_discovery">
                         <p>Discovery Now</p>
-                    </div>
+                    </button>
 
-                    
                 </div>
 
             </div>
@@ -304,10 +310,10 @@
                         </div>           
                     </div>
                     <div class="testimonials_button">
-                        <div class="review_btn">
+                        <button onclick="SeeReview()" class="review_btn">
                             <h3>See Reviews on app store</h3>
-                        </div>
-                        <div class="promotion_btn">
+                        </button>
+                        <div onclick="Playing()" class="promotion_btn">
                                 <img  src="./Assests/Ellipse 7.png" alt="Play">
                                 <p>View <br>Promotion</p>
                         </div>
@@ -413,9 +419,24 @@
             
 
             </div>
-        
-
     </div>
+    <script>
+        function DownloadButton(){
+            alert("Downloading Started.....")
+        }
+        function Playing(){
+            alert("Music Started......")
+        }
+        function FreeRegister(){
+            alert('Registration is Free....')
+        }
+        function Discovery(){
+            alert('Start Your Discovery Now....')
+        }
+        function SeeReview(){
+            alert('Starting Viewing Your Reviews....')
+        }
+    </script>
 
 </body>
 </html>

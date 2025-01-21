@@ -15,6 +15,7 @@
 <body>
             <!--Main Page Section (Banner Created On It)-->
     <div id="Main_Page">
+        <div class="Banner">
         <div id="ellipse1"></div>
         <div id="ellipse2"></div>
         <div id="ellipse3"></div>
@@ -25,6 +26,7 @@
         <div id="banner_emoji"></div>
         <div id="banner_text"><p>Get <span>20% Discount</span> get for new account</p></div>
         <div id="register_btn">Register now</div> 
+        </div>
             <!--Hero Section (All Main Content In It)-->
         <div id="Hero_Section">
             <!--Nav Bar-->
@@ -49,8 +51,8 @@
                     <li>Blog</li>
                     <li>Contact</li>
                 </ul>
-                <div id="profile_btn"><img src="./Assests/profile.png" alt="profile logo"></div>
-                <div id="join_btn"> <p>Join ITech Hub</p> <img src="./Assests/arrowright.png" alt="arrow"></div>
+                <button onclick="ProfileView()" id="profile_btn"><img src="./Assests/profile.png" alt="profile logo"></button>
+                <button onclick="Join()" id="join_btn"> <p>Join ITech Hub</p> <img src="./Assests/arrowright.png" alt="arrow"></button>
             </div>
             <!--Notero Promo Section (Promotion Related Details Here)-->
 
@@ -112,7 +114,7 @@
                 </div>
                 <div class="features">
                     <div id="features_text">
-                        <h1>Awesome <span>Features</span> </h1>
+                        <h1>Awesome <span>Features</span></h1>
                     </div>
                     <div class="stroke">
                         <img id="stroke1" src="./Assests/Ellipse 13 (Stroke).svg" alt="Stroke Outer">
@@ -435,6 +437,12 @@
         }
         function SeeReview(){
             alert('Starting Viewing Your Reviews....')
+        }
+        function ProfileView(){
+            alert('Profile Details Here....')
+        }
+        function Join(){
+            alert('Join ITECH Hub Here....')
         }
     </script>
 

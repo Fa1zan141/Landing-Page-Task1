@@ -1070,8 +1070,11 @@ html, body {
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 1vw;
 }
+.socialIcon img{
+    width: 7vw;
+    height: 12vh;
+ }
 .socialIcon h2{
     color: #444444;
     font-size: 32px;
@@ -1420,3 +1423,169 @@ html, body {
 
 /* Responsive Design */
 
+/* Media Query for max-width 1400px */
+@media (max-width: 1400px) {
+   /* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2vw; /* Responsive padding */
+}
+
+/* Responsive Typography */
+h1 {
+    font-size: 3vw; /* Responsive font size */
+}
+
+h2 {
+    font-size: 2.5vw; /* Responsive font size */
+}
+
+h3 {
+    font-size: 2vw; /* Responsive font size */
+}
+
+p {
+    font-size: 1.5vw; /* Responsive font size */
+}
+
+/* Hero Section */
+#Hero_Section {
+    position: relative;
+    height: 50vh; /* Responsive height */
+    background: url('your-image.jpg') no-repeat center center/cover; /* Background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vw; /* Responsive padding */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.nav .logo img {
+    width: 10vw; /* Responsive logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 2vw; /* Responsive margin */
+}
+
+/* Notero Promo Section */
+#NoteroPromoSection {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+.NoteroPromoSection-left, .NoteroPromoSection-right {
+    flex: 1; /* Flex grow */
+    padding: 2vw; /* Responsive padding */
+}
+
+.NoteroPromoSection-right img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Feature Section */
+.FeatureSection {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+.FeatureSection div {
+    flex: 1 1 30%; /* Flex grow, shrink, and basis */
+    margin: 1vw; /* Responsive margin */
+}
+
+/* Register Section */
+.RegisterSection {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: space-between;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+.RegisterSection-left, .RegisterSection-right {
+    flex: 1; /* Flex grow */
+    padding: 2vw; /* Responsive padding */
+}
+
+/* Security Section */
+.SecuritySection {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: space-between;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+/* Dark Theme Section */
+.DarkThemeSection {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: space-between;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+/* Popular Apps Section */
+.PopularAppsSection {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: space-between;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+/* Testimonials Section */
+.Testimonials {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: space-between;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+/* Footer Section */
+.Footer {
+    display: flex;
+    flex-direction: row; /* Default to row */
+    justify-content: space-between;
+    padding: 5vh 2vw; /* Responsive padding */
+}
+
+/* Buttons */
+.btn_register, #download_app {
+    width: 80%; /* Full width for buttons */
+    padding: 2vh; /* Responsive padding */
+    font-size: 1.5vw; /* Responsive font size */
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+}

@@ -37,7 +37,10 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vw;
+    padding-top: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-bottom: 6vh;
     width: 100%;
 }
 
@@ -83,7 +86,7 @@ html, body {
 }
 .nav #join_btn {
     position: relative;
-    width: 8vw;
+    width: 7vw;
     height: 4vh;
     display: flex;
     align-items: center;
@@ -107,7 +110,7 @@ html, body {
 .Hot{
     position: absolute;
     background-color: #FD000033;
-    top: 6vh;
+    top: 3vh;
     left: 53vw;
     width: 30px;
     height: 20px;
@@ -1280,7 +1283,7 @@ html, body {
     width: 40px;
     height: 40px;
     left: 795px;
-    bottom: 155px;
+    bottom: 152px;
     background: #6953D3;
     border-radius: 8px;
     transform: rotate(50deg);

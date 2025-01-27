@@ -1,6 +1,4 @@
 /*Landing Page Css File*/
-
-
 /*Global Css*/
 * {
     margin: 0;
@@ -29,7 +27,7 @@ html, body {
     width: 100%; 
     height: 100%; 
     background-color: white;
-    top: 8vh;
+    top: 80px;
     border-radius: 30px 30px 0 0;
 }
 /*Nav Bar Css*/
@@ -37,10 +35,8 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    margin-bottom: 6vh;
+    padding: 40px 120px 120px 120px;
+    margin-bottom: 60px;
     width: 100%;
 }
 
@@ -55,7 +51,6 @@ html, body {
     align-items: center;
     gap: 5vw;
     list-style-type: none;
-    margin-left: 25vw;
 }
 .GroupNav-Home{
     display: flex;
@@ -74,25 +69,17 @@ html, body {
     color: #444444;
 }
 .nav #profile_btn {
-    position: relative;
-    width: 2vw;
-    height: 4vh;
-    padding: 6px;
-    left: 2vw;
-    border: 1px solid #444444;
+    border: none;
     background-color: transparent;
-    border-radius: 100px;
     cursor: pointer;
 }
 .nav #join_btn {
-    position: relative;
-    width: 7vw;
-    height: 4vh;
+    width: 120px;
+    height: 35px;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     gap: 1vw;
-    padding: 1vh;
     border: 1px solid #444444;
     background-color: transparent;
     border-radius: 50px;
@@ -102,16 +89,12 @@ html, body {
     color: #444444;
     font-size: 10px;
     font-weight: 400;
-    line-height: 10.89px;
-    text-align: left;
-
-
 }
 .Hot{
     position: absolute;
     background-color: #FD000033;
-    top: 3vh;
-    left: 53vw;
+    top: 4vh;
+    left: 42vw;
     width: 30px;
     height: 20px;
     border-radius: 3px;
@@ -124,32 +107,50 @@ html, body {
     padding: 7px;
 
 }
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.profile-image{
+    background-image: url('./Assests/Profile.svg');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+}
 /*NoteroPromoSection css*/
+#notero_div{
+    width: 220px;
+    height: 60px;
+    background-color: #6953D31F;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #NoteroPromoSection {
     display: flex;
+    padding: 4vw 6vw 6vw 6vw;
     align-items: center;
     justify-content: center;
     width: 100%;
     transform: translateY(-20vh); 
 }
-
-.NoteroPromoSection-left{
-    padding: 4vw;
-    width: 50vw;
-}
-.NoteroPromoSection-right {
-    padding: 4vw;
-    width: 50%; 
-    margin-right: 10%; 
-    transform: translateY(14vh); 
+.NoteroPromoSection-right{
+    position: relative;
+    top: 15vh;
+    right: 5vw;
 }
 .NoteroPromoSection-right img {
-    height: 180%;
-    width: 130%;
+    height: 100%;
+    width: 120%;
+    
 }
 
 .NoteroPromoSection-left h5{
-    font-size: 95px;
+    font-size: 85px;
     font-weight: 600;
     width: 60vw;
     color: #333333;
@@ -157,7 +158,7 @@ html, body {
 .NoteroPromoSection-left h6{
     width: 60vw;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 24px;
     color: #33333399;
     margin-top: 2vh;
 }
@@ -170,7 +171,7 @@ html, body {
 }
 .NoteroPromoSection-left p{
     color: #6953D3;
-     font-size: 24px;
+     font-size: 18px;
      font-weight: 500;
  }
 #NoteroPromoSectionbuttons{
@@ -192,8 +193,8 @@ html, body {
 #rectangle_8{
     width: 100vw;
     height: 80vh;
-    margin-top: 8vh;
-    margin-left: 16vw;
+    margin-top: 9vh;
+    margin-left: 18vw;
     z-index: 0;
 }
 #rectangle_7{
@@ -235,19 +236,20 @@ html, body {
 }
 #notero_div2{
     position: relative;
-    width: 15vw;
-    height: 7vh;
-    left: 42vw;
+    width: 250px;
+    height: 60px;
+    left: 43vw;
     bottom: 20vh;
-    text-align: center;
-    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     border-radius: 5px;
     z-index: 2;
 }
 #notero_div2 p{
     color: #6953D3;
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 500;
 }
 .features{
@@ -345,21 +347,22 @@ html, body {
 
 
 #RegisterSection-text{
-    width: 11vw;
-    height: 5vh;
+    width: 200px;
+    height: 50px;
     background-color: #6953D31F;
     border-radius: 5px;
     margin-bottom: 3vh;
     opacity: 0px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #RegisterSection-text p {
     color: #6953D3;
-    text-align: left; 
-    padding: 1vh 0 0 1vw; 
     font-size: 16px; 
     font-weight: 500; 
-    margin: 0; 
+    text-align: center;
 }
 .RegisterSection-right h1{
     font-size: 40px;
@@ -375,14 +378,14 @@ html, body {
     text-fill-color: transparent;
     
 }
-.RegisterSection-right p{
+.RegisterSection-right h6{
     color: #44444499;
     width: 24vw;
     font-size: 17px;
     font-weight: 500;
     line-height: 30.01px;
-    text-align: justified;
-    margin-bottom: 5vh;
+    text-align: justify;
+    margin-bottom: 4vh;
 }
 .RegisterBenefits{
     display: grid;
@@ -409,12 +412,15 @@ html, body {
 }
 .btn_register{
     background-color: #6953D3;
-    width: 10vw;
-    height: 5vh;
+    width: 180px;
+    height: 50px;
     margin-top: 3vh;
     border-radius: 50px;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn_register:hover{
     scale: 1.1;
@@ -423,9 +429,6 @@ html, body {
     color: #ffffff;
     font-size: 19px;
     font-weight: 500;
-    text-align: left;
-    padding: 1vh 0 0 2vw;
-
 }
 .Images{
     display: flex;
@@ -447,19 +450,19 @@ html, body {
 }
 .Images #Text_button{
     position: absolute;
-    margin-top: 82vh;
+    margin-top: 72vh;
     left: 6vw;
-    width: 14vw;
-    height: 6vh;
+    width: 260px;
+    height: 60px;
     text-align: center;
     background-color: #6953D31F;
     border-radius: 5px;
-    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Images #Text_button p{
     color: #6953D3;
-    padding: 2vh;
-    text-align: center;
      font-size: 17px;
      font-weight: 500;
  }
@@ -554,60 +557,58 @@ html, body {
 .Chrome{
     background-color: #E7E5E5;
     display: flex;
-    padding: 2vw;
     justify-content: center;
-    align-items: center;
     border-radius: 100px;
-    width: 14vw;
-    height: 8vh;
+    width: 240px;
+    height: 70px;
     text-decoration: none;
 }
 .Chrome h2 {
-    padding-left: 1vh;
-    padding-right: 5px;
     font-weight: 100;
     color: #444444;
 
 }
 .Chrome p{
-    text-align: center;
     color: #444444;
-    padding-top: 5vh;
     font-size: 10px;
     font-weight: 500;
-    line-height: 17.65px;
-    text-align: justify;
+    margin-top: 44px;
+    line-height: 15px;
 }
 .Chrome span{
     color: #444444;
-    padding-top: 2vw;
     font-size: 11px;
     font-weight: 600;
-    line-height: 19.42px;
-    text-align: justify;
-
-
 }
+.text-chrome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    gap: 10px;
+}
+
 .ImageBlock{
     display: flex;
     width: 50vw;
-    height: 80vh;
+    height: 70vh;
     
 }
 .ImageBlock #bubble_img{
-    padding-top: 2vw;
+    padding-top: 1vw;
     border: none;
     background-color: transparent;
 }
 .ImageBlock #double_phone{
     position: relative;
-    right: 39vw;
-    bottom: 4vw;
+    width: 40vw;
+    height: 70vh;
+    right: 36vw;
+    bottom: 8vh;
     z-index: 1;
     border: none;
     background-color: transparent;
 }
-
 /*DarkThemeSection css*/
 
 .DarkThemeSection{
@@ -635,26 +636,21 @@ html, body {
     width: 40vw;
     padding: 20vh 0 0 1vw;
 }
-.DarkThemeSection-right #Text_button{
-    width: 10vw;
-    height: 5vh;
-    background-color: #6953D31F;
-    border-radius: 5px ;
-    margin-bottom: 3vh;
-}
 #Text_btn{
-    width: 11vw;
-    height: 5vh;
+    width: 180px;
+    height: 50px;
     border-radius: 5px;
     background-color: #6953D31F;
     margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #Text_btn p{
     color: #6953D3;
     font-size: 17px;
-    text-align: justify;
-    padding: 1vh 0 0 2vw;
     font-weight: 500;
+    text-align: center;
 }
 .DarkThemeSection-right h1{
     color: #333333;
@@ -671,7 +667,7 @@ html, body {
     background-clip: text;
     text-fill-color: transparent;
 }
-.DarkThemeSection-right p{
+.DarkThemeSection-right h6{
     color: #44444499;
     width: 20vw;
     font-size: 17px;
@@ -695,8 +691,8 @@ html, body {
 }
 #btn_discovery{
     background-color: #6953D3;
-    width: 9vw;
-    height: 5vh;
+    width: 180px;
+    height: 50px;
     margin-top: 3vh;
     border-radius: 50px;
     border: none;
@@ -709,8 +705,6 @@ html, body {
     color: #ffffff;
     font-size: 19px;
     font-weight: 500;
-    text-align: left;
-    padding: 1vh 0 0 1vw ;
     
 }
 
@@ -722,19 +716,20 @@ html, body {
     transform: translateY(-80vh);
 }
 #PopularApp-btn{
-    width: 10vw;
-    height: 5vh;
+    width: 200px;
+    height: 50px;
     transform: translate(44vw);
-    text-align: center;
     background-color: #6953D31F;
     border-radius: 5px;
     opacity: 0px;
     z-index: 2;
     margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #PopularApp-btn p{
     color: #6953D3;
-    padding: 1vh;
     font-size: 17px;
     font-weight: 500;
 }
@@ -818,12 +813,12 @@ html, body {
 .images_box{
     position: relative;
     display: flex;
-    width: 100vw;
+    width: 70vw;
     gap: 10vw;
     bottom: 67vh;
 }
 .images_box img{
-    width: 18vw;
+    width: 12vw;
     height: 52vh;
 }
 .image1 {
@@ -849,8 +844,11 @@ html, body {
     bottom: 127vh;
 }
 .hand_image img {
-    width: 109vw;
-    height: 74vh;
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    top: 4vh;
+    left: 5vw;
 }
 
 
@@ -872,22 +870,23 @@ html, body {
 }
 
 #Testimonials-text{
-    width: 8vw;
-    height: 5vh;
-    text-align: center;
+    width: 160px;
+    height: 50px;
     background-color: #6953D31F;
     border-radius: 5px;
     opacity: 0px;
     z-index: 2;
     margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#Testimonials-text p{
+#Testimonials-text h5{
     color: #6953D3;
-    text-align: center;
-    padding: 1vh;
     font-size: 17px;
     font-weight: 500;
 }
+
 .Testimonials h1{
     color: #333333;
     font-size: 40px;
@@ -940,12 +939,15 @@ html, body {
     gap: 2vw;
 }
 .review_btn{
-    width: 16vw;
-    height: 6vh;
+    width: 320px;
+    height: 60px;
     background-color: #6953D3;
     border-radius: 50px ;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .review_btn:hover{
     scale: 1.1;
@@ -954,22 +956,18 @@ html, body {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
-    line-height: 21.78px;
-    text-align: center;
 }
 .promotion_btn{
-    display: flex;
-    width: 15vw;
-    height: 6vh;
+    width: 320px;
+    height: 60px;
     gap: 1vw;
     cursor: pointer;
+    display: flex;
 }
 .promotion_btn p{
     color: #333333;
     font-size: 17px;
     font-weight: 500;
-    padding-top: 1vh;
-    line-height: 2vh;
 }
 .reviews-section{
     display: flex;
@@ -1021,24 +1019,22 @@ html, body {
     transform: translateY(-310vh);
 }
 .SocialTabs-btn{
-    width: 10vw;
-    height: 5vh;
+    width: 200px;
+    height: 50px;
     transform: translate(45vw);
-    text-align: center;
     background-color: #6953D31F;
     border-radius: 5px;
     opacity: 0px;
     z-index: 2;
     margin-bottom: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .SocialTabs-btn p{
     color: #6953D3;
-    padding: 1vh;
-    text-align: center;
     font-size: 17px;
     font-weight: 500;
-    font-family: Inter;
-    line-height: 20.57px;
 }
 .SocialTabsSection h1{
     color: #333333;
@@ -1139,25 +1135,23 @@ html, body {
 }
 .AppStore_btn{
     background-color: #6953D3;
-    width: 20vw;
-    height: 7vh;
+    width: 400px;
+    height: 70px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1vw;
-    padding: 1vw;
 }
 .PlayStore_btn{
     border: 1px solid #000000;
-    width: 20vw;
-    height: 7vh;
+    width: 400px;
+    height: 70px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1vw;
-    padding: 1vw;
 }
 .AppStore_btn p{
     color: #FFFFFF;
@@ -1168,7 +1162,6 @@ html, body {
     color: #333333;
     font-size: 18px;
     font-weight: 500;
-    text-align: left;
 }
 
 .FooterBar{
@@ -1356,18 +1349,6 @@ html, body {
     gap: 0px;
     opacity: 0px;
 }
-#notero_div{
-    width: 15vw;
-    height: 7vh;
-    text-align: center;
-    padding-top: 2vh;
-    top: 225px;
-    background-color: #6953D31F;
-    gap: 0px;
-    border-radius: 5px;
-    opacity: 0px;
-}
-
 .hero_btn{
     display: flex;
     align-items: center;
@@ -1394,10 +1375,9 @@ html, body {
 #download_app{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1vw;
-    width: 12vw;
-    height: 6vh;
+    justify-content: center;
+    width: 220px;
+    height: 60px;
     background-color: #6953D3;
     border-radius: 50px;
     border: none;
@@ -1409,6 +1389,7 @@ html, body {
 #download_app p{
     color: #FFFFFF;
     font-size: 20px;
+    font-weight: 500;
 }
 #circle{
     position: relative;
@@ -1421,171 +1402,1516 @@ html, body {
 }
 
 
-/* Responsive Design */
 
-/* Media Query for max-width 1400px */
-@media (max-width: 1400px) {
-   /* Base Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Media Query for 1600px screens */
+@media (max-width: 1600px) {
+    .nav {
+
+        padding: 20px 80px 80px 80px;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    .nav ul {
+        gap: 4vw;
+    }
+
+    .nav .logo img {
+        width: 12vw; 
+    }
+    #Polygon1 {
+        display: none;
+
+    }
+    #banner_btn{
+        position: absolute;
+        width: 80px;
+        height: 32px;
+        left: 400px;
+        top: 25px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        z-index: 1;
+        color: #444444;
+    }
+    #banner_btn p{
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+    
+    }
+    #banner_emoji{
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        left: 500px;
+        top: 28px;
+        z-index: 1;
+        background: url(./Assests/SimilingEmoji.png);
+    
+    }
+    #banner_text p{
+        font-size: 17px;
+        font-weight: 500;
+        position: absolute;
+        width: 30vw;
+        height: 100px;
+        left: 540px;
+        top: 28px;
+        color: #bdbdbd;
+        z-index: 1;
+    }
+    #banner_text span{
+        font-size: 17px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    #register_btn{
+        font-size: 18px;
+        font-weight: 500;
+        position: absolute;
+        text-decoration: underline;
+        width: 17vw;
+        height: 100px;
+        left: 900px;
+        top: 28px;
+        color: #ffffff;
+        z-index: 1;
+    }
+    .Hot{
+        position: absolute;
+        background-color: #FD000033;
+        top: 2vh;
+        left: 40vw;
+        width: 30px;
+        height: 20px;
+        border-radius: 3px;
+    }
+
+    #NoteroPromoSection {
+        display: flex;
+        padding: 8vw 6vw 6vw 6vw;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateY(-34vh); 
+    }
+    .NoteroPromoSection-right{
+        position: relative;
+        top: 10vh;
+        right: 10vw;
+    }
+    .NoteroPromoSection-right img {
+        position: relative;
+        height: 100%;
+        width: 160%;
+        top: 5vh;
+        
+    }
+    
+    .NoteroPromoSection-left h5{
+        font-size: 60px;
+        font-weight: 600;
+        width: 60vw;
+        color: #333333;
+    }
+    .NoteroPromoSection-left h6{
+        width: 60vw;
+        font-weight: 400;
+        font-size: 20px;
+        color: #33333399;
+        margin-top: 2vh;
+    }
+    .NoteroPromoSection-left p{
+        color: #6953D3;
+         font-size: 18px;
+         font-weight: 500;
+     }
+     #NoteroPromoSectionbuttons{
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+    }
+    #circle{
+        position: relative;
+        width: 3vw;
+        height: 5vh;
+        border-radius: 100px;
+        background-color: #6953D3;
+        left: 48vw;
+        bottom: 28vh;
+    }
+    .FeatureSection {
+        transform: translateY(-64vh); 
+    }
+    .FeatureSection_images{
+        height: 100%;
+    }
+    
+    #rectangle_8{
+        width: 100vw;
+        height: 100%;
+        margin-top: 10vh;
+        margin-left: 12vw;
+        z-index: 0;
+    }
+    #rectangle_7{
+        position: absolute;
+        top: 11vh;
+        width: 100vw;
+    }
+    #line img{
+        position: relative;
+        width: 88vw;
+        bottom: 82vh;
+        left: 6vw;
+        z-index: 2;
+    }
+    .FeatureSectiontext{
+        position: relative;
+        bottom: 88vh;
+        left: 25vw;
+    }
+
+    .FeatureCompanies{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        bottom: 85vh;
+        height: 15vh;
+        z-index: 2;
+    }
+    .FeatureCompanies img{
+        width: 12vw;    
+    }
+    #notero_div2{
+        bottom: 80vh;
+ 
+    }
+    .features{
+        position: relative;
+        width: 100vw;
+        height: 30vh;
+        bottom: 75vh;
+        left: 3vw;
+        z-index: 2;
+    }
+    .stroke{
+        position: relative;
+        width: 90vw;
+        height: 100%;
+        margin-left: 0vw;
+    }
+    .stroke #stroke1{
+        position: absolute;
+        left: 22vw;
+        height: 50vh;
+    }
+    .stroke #stroke2{
+        position: absolute;
+        left: 25vw;
+        top: 5vh;
+        height: 45vh;
+    }
+    .feature_icons{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr 1fr  1fr ;
+        width: 100%;
+        gap: 1vw;
+        height: 80%;
+        bottom: 20vh;
+        right:2vw;
+    }
+    .group_icon img{
+        display: grid;
+        margin-left: 2vw;
+        padding-bottom: 4vh;
+        grid-template-columns: 1fr 1fr;
+        width: 10vw;
+    }
+    .group_icon p{
+        text-align: center;
+        font-size: 17px;
+        width: 14vw;
+        font-weight: 700;
+    }
+    .New{
+        position: relative;
+        background-color: #B4F59D;
+        height: 50px;
+        width: 50px;
+        bottom: 28vh;
+        left: 10vw;
+        border-radius: 100px;
+    }
+    .New p{
+    
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.94px;
+        text-align: left;
+        color: #1A6301;
+        padding: 2vh 0 0 15px;
+    }
+    .RegisterSection {
+        transform: translateY(-110vh);
+    }
+    
+    .RegisterSection-right {
+        padding: 6vh 0 0 15vw; 
+    } 
+    .RegisterSection-right h6{
+        color: #44444499;
+        width:30vw;
+        font-size: 17px;
+    }
+    .group{
+        display: flex;
+        height: 8vh;
+        gap: 1vw;
+        align-items: center;  
+    }
+    .group img{
+        width: 3vw;
+        height: 4vh;
+        padding: 1vh;
+        border-radius: 100px;
+        background-color: #6953D31A;   
+    }
+    .group p{
+        color: #1E1E1E;
+        font-size: 17px;
+        font-weight: 700;
+        margin-top: 0vh;
+    }
+    .Images #line{
+        position: absolute;
+        width: 80%;
+    }
+    .Images #bubbles{
+        position: absolute;
+        padding: 1vw;
+        
+    }
+    .Images #Ipad{
+        position: absolute;
+        padding: 6vw;
+    }
+    .Images #Text_button{
+        position: absolute;
+        top: 20vh;
+        left: 8vw;
+        width: 260px;
+        height: 60px;
+    }
+    .SecuritySection{
+        transform: translateY(-105vh);
+    }
+    .SecuritySectionText p{
+        color: #44444499;
+        width: 40vw;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 30.01px;
+        margin-bottom: 5vh;
+    }
+    .SecuritySectionText #TextBlock{
+        width: 40vw;
+        height: 25vh;
+        border-radius: 10px;
+        background-color: #6953D326;
+        margin-bottom: 5vh;
+    }
+    #TextBlock h2{
+        color: #4B2FD2;
+        width: 45vw;
+        padding: 1vw;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    #TextBlock span{
+        color: #4B2FD2;
+        text-align: center;
+        padding-inline: 1vw;
+        transform: rotate(180deg);
+        margin-left: 110px;
+    }
+    #TextBlock p{
+        color: #44444499;
+        padding: 1vw;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    .ReadMoreBlock{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1vw;
+        width: 25vw;
+        height: 15vh;
+    }
+    #ReadMoreBlock-group{
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    #ReadMoreBlock-group h2{
+        color: #444444;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    #ReadMoreBlock-group span{
+        color: #444444;
+    } 
+    .ImageBlock{
+        display: flex;
+        width: 40vw;
+        height: 60vh;
+        
+    }
+    .ImageBlock #bubble_img{
+        padding-top: 2vw;
+        border: none;
+        background-color: transparent;
+    }
+    .ImageBlock #double_phone{
+        position: relative;
+        top: 10vh;
+        right: 30vw;
+        z-index: 1;
+        border: none;
+        background-color: transparent;
+    }
+    .Chrome p{
+        color: #444444;
+        font-size: 8px;
+        font-weight: 500;
+        margin-top: 44px;
+        line-height: 15px;
+    }
+    
+    .DarkThemeSection{
+        display: flex;
+        width: 100vw;
+        transform: translateY(-140vh);
+    }
+    .DarkThemeSection-left{
+        width: 60vw;
+        display: flex;
+        padding: 10vw;
+    }
+    .DarkThemeSection-left #theme_bubble{
+        width: 50vw;
+    }
+    .DarkThemeSection-left #theme_image{
+        position: relative;
+        width: 55vw;
+        padding: 1vw;
+        right: 45vw;
+        bottom: 0vw;
+        z-index: 1;
+    }
+    .DarkThemeSection-right{
+        width: 40vw;
+        padding: 20vh 0 0 2vw;
+    }
+    .PopularAppsSection{
+        width: 100vw;
+        transform: translateY(-140vh);
+    }
+    .PhoneImagesSection{
+        width: 100vw;
+        transform: translateY(-200vh);
+    }
+    .Testimonials{
+        display: flex;
+        width: 100vw;
+        transform: translateY(-310vh);
+        padding: 5vw;
+    }
+    .Testimonials-right img{
+        position: relative;
+        right: 12vw;
+    }
+    .review_btn{
+        width: 320px;
+        height: 60px;
+        background-color: #6953D3;
+        border-radius: 50px ;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .review_btn:hover{
+        scale: 1.1;
+    }
+    .review_btn h3{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .promotion_btn{
+        width: 320px;
+        height: 60px;
+        gap: 1vw;
+        cursor: pointer;
+        display: flex;
+    }
+    .promotion_btn p{
+        color: #333333;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .reviews-section{
+        display: flex;
+        flex-direction: column;
+        padding: 2vh;
+        gap: 3vh;
+    }
+    .review-group{
+        position: relative;
+        display: flex;
+        padding: 2vw;
+        gap: 2vw;
+        align-items: center;
+        justify-content: center;
+        width: 32vw;
+        height: 17vh;
+        border-radius: 30px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        bottom: 70vh;
+        right: 8vw;
+    }
+    .review-group img{
+        position: relative;
+       width: 70px;
+       height: 70px;
+       left: 0vw;
+    }
+    .review{
+        width: 22vw;
+        height: 22vh;
+    }
+    .review img{
+        padding-top: 50px;
+    }
+    .review h4{
+        color: #444444;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 19.42px;
+        text-align: justify;
+    }
+    .review h6{
+        color: #444444;
+        font-size: 7px;
+        font-weight: 400;
+        line-height: 12.36px;
+        text-align: justify;
+    }
+    .review h6 span{
+        color: rgb(51, 203, 233);
+    }
+    
+    .SocialTabsSection{
+        width: 100vw;
+        transform: translateY(-370vh);
+    }
+  
+    .SocialTabsSection h1{
+        color: #333333;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48.41px;
+        margin-left: 60px;
+    }
+    .Footer{
+        width: 100vw;
+        height: 20%;
+        transform: translateY(-360vh);
+    }
+    .FooterImage{
+        width: 100%;
+        height: 75vh;
+        background-image: url('./Assests/Footer.svg');
+        background-size: cover;
+        
+    }
+    .FooterDownloadButtons{
+        display: flex;
+        gap: 5vw;
+        margin: 25vh 0 0 19vw;
+    }
+    .FooterBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 8vw;
+        padding-right: 12vw;
+        margin: 16vh 0 0 0;
+    }
+    #Footer_line{
+        width: 80vw;
+        margin-left: 8vw;
+    }  
 }
 
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2vw; /* Responsive padding */
+/* Media Query for 1200px screens */
+/* Media Query for 1200px screens */
+@media (max-width: 1200px) {
+    .nav {
+        padding: 15px 60px 60px 60px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .nav ul {
+        gap: 3vw;
+    }
+
+    .nav .logo img {
+        width: 10vw; 
+    }
+    #Polygon1 {
+        display: none;
+    }
+    #banner_btn {
+        position: absolute;
+        width: 70px;
+        height: 30px;
+        left: 350px;
+        top: 20px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        z-index: 1;
+        color: #444444;
+    }
+    #banner_btn p {
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+    }
+    #banner_emoji {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 440px;
+        top: 23px;
+        z-index: 1;
+        background: url(./Assests/SimilingEmoji.png);
+    }
+    #banner_text p {
+        font-size: 15px;
+        font-weight: 500;
+        position: absolute;
+        width: 28vw;
+        height: 80px;
+        left: 470px;
+        top: 23px;
+        color: #bdbdbd;
+        z-index: 1;
+    }
+    #banner_text span {
+        font-size: 15px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    #register_btn {
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+        text-decoration: underline;
+        width: 16vw;
+        height: 90px;
+        left: 800px;
+        top: 23px;
+        color: #ffffff;
+        z-index: 1;
+    }
+    .Hot {
+        position: absolute;
+        background-color: #FD000033;
+        top: 2vh;
+        left: 35vw;
+        width: 28px;
+        height: 18px;
+        border-radius: 3px;
+    }
+
+    #NoteroPromoSection {
+        display: flex;
+        padding: 7vw 5vw 5vw 5vw;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateY(-30vh);
+    }
+    .NoteroPromoSection-right {
+        position: relative;
+        top: 8vh;
+        right: 8vw;
+    }
+    .NoteroPromoSection-right img {
+        position: relative;
+        height: 100%;
+        width: 150%;
+        top: 4vh;
+    }
+    .NoteroPromoSection-left h5 {
+        font-size: 50px;
+        font-weight: 600;
+        width: 50vw;
+        color: #333333;
+    }
+    .NoteroPromoSection-left h6 {
+        width: 50vw;
+        font-weight: 400;
+        font-size: 18px;
+        color: #33333399;
+        margin-top: 2vh;
+    }
+    .NoteroPromoSection-left p {
+        color: #6953D3;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    #NoteroPromoSectionbuttons {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    #circle {
+        position: relative;
+        width: 3vw;
+        height: 5vh;
+        border-radius: 100px;
+        background-color: #6953D3;
+        left: 45vw;
+        bottom: 26vh;
+    }
+    .FeatureSection {
+        transform: translateY(-50vh);
+    }
+    .FeatureSection_images {
+        height: 100%;
+    }
+    #rectangle_8 {
+        width: 100vw;
+        height: 100%;
+        margin-top: 8vh;
+        margin-left: 10vw;
+        z-index: 0;
+    }
+    #rectangle_7 {
+        position: absolute;
+        top: 10vh;
+        width: 100vw;
+    }
+    #line img {
+        position: relative;
+        width: 80vw;
+        bottom: 75vh;
+        left: 5vw;
+        z-index: 2;
+    }
+    .FeatureSectiontext {
+        position: relative;
+        bottom: 80vh;
+        left: 20vw;
+    }
+
+    .FeatureCompanies {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        bottom: 70vh;
+        height: 12vh;
+        z-index: 2;
+    }
+    .FeatureCompanies img {
+        width: 10vw;
+    }
+    #notero_div2 {
+        bottom: 65vh;
+    }
+    .features {
+        position: relative;
+        width: 100vw;
+        height: 28vh;
+        bottom: 60vh;
+        left: 2vw;
+        z-index: 2;
+    }
+    .stroke {
+        position: relative;
+        width: 85vw;
+        height: 100%;
+        margin-left: 0vw;
+    }
+    .stroke #stroke1 {
+        position: absolute;
+        left: 20vw;
+        height: 45vh;
+    }
+    .stroke #stroke2 {
+        position: absolute;
+        left: 23vw;
+        top: 5vh;
+        height: 40vh;
+    }
+    .feature_icons {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr 1fr  1fr;
+        width: 100%;
+        gap: 1.5vw;
+        height: 80%;
+        bottom: 15vh;
+        right: 2vw;
+    }
+    .group_icon img {
+        display: grid;
+        margin-left: 2vw;
+        padding-bottom: 3vh;
+        grid-template-columns: 1fr 1fr;
+        width: 9vw;
+    }
+    .group_icon p {
+        text-align: center;
+        font-size: 16px;
+        width: 13vw;
+        font-weight: 700;
+    }
+    .New {
+        position: relative;
+        background-color: #B4F59D;
+        height: 45px;
+        width: 45px;
+        bottom: 26vh;
+        left: 8vw;
+        border-radius: 100px;
+    }
+    .New p {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16.94px;
+        text-align: left;
+        color: #1A6301;
+        padding: 2vh 0 0 12px;
+    }
+    .RegisterSection {
+        transform: translateY(-95vh);
+    }
+
+    .RegisterSection-right {
+        padding: 5vh 0 0 12vw;
+    }
+    .RegisterSection-right h6 {
+        color: #44444499;
+        width: 28vw;
+        font-size: 16px;
+    }
+    .group {
+        display: flex;
+        height: 7vh;
+        gap: 1vw;
+        align-items: center;
+    }
+    .group img {
+        width: 3vw;
+        height: 4vh;
+        padding: 1vh;
+        border-radius: 100px;
+        background-color: #6953D31A;
+    }
+    .group p {
+        color: #1E1E1E;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0vh;
+    }
+    .Images #line {
+        position: absolute;
+        width: 75%;
+    }
+    .Images #bubbles {
+        position: absolute;
+        padding: 1vw;
+    }
+    .Images #Ipad {
+        position: absolute;
+        padding: 5vw;
+    }
+    .Images #Text_button {
+        position: absolute;
+        top: 18vh;
+        left: 7vw;
+        width: 240px;
+        height: 55px;
+    }
+    .SecuritySection {
+        transform: translateY(-90vh);
+    }
+    .SecuritySectionText p {
+        color: #44444499;
+        width: 38vw;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 30.01px;
+        margin-bottom: 4vh;
+    }
+    .SecuritySectionText #TextBlock {
+        width: 38vw;
+        height: 22vh;
+        border-radius: 10px;
+        background-color: #6953D326;
+        margin-bottom: 4vh;
+    }
+    #TextBlock h2 {
+        color: #4B2FD2;
+        width: 42vw;
+        padding: 1vw;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    #TextBlock span {
+        color: #4B2FD2;
+        text-align: center;
+        padding-inline: 1vw;
+        transform: rotate(180deg);
+        margin-left: 100px;
+    }
+    #TextBlock p {
+        color: #44444499;
+        padding: 1vw;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    .ReadMoreBlock {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1vw;
+        width: 23vw;
+        height: 13vh;
+    }
+    #ReadMoreBlock-group {
+        width: 32vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    #ReadMoreBlock-group h2 {
+        color: #444444;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    #ReadMoreBlock-group span {
+        color: #444444;
+    }
+    .ImageBlock {
+        display: flex;
+        width: 35vw;
+        height: 55vh;
+    }
+    .ImageBlock #bubble_img {
+        padding-top: 2vw;
+        border: none;
+        background-color: transparent;
+    }
+    .ImageBlock #double_phone {
+        position: relative;
+        top: 8vh;
+        right: 25vw;
+        z-index: 1;
+        border: none;
+        background-color: transparent;
+    }
+    .Chrome p {
+        color: #444444;
+        font-size: 7px;
+        font-weight: 500;
+        margin-top: 40px;
+        line-height: 14px;
+    }
+
+    .DarkThemeSection {
+        display: flex;
+        width: 100vw;
+        transform: translateY(-120vh);
+    }
+    .DarkThemeSection-left {
+        width: 55vw;
+        display: flex;
+        padding: 8vw;
+    }
+    .DarkThemeSection-left #theme_bubble {
+        width: 45vw;
+    }
+    .DarkThemeSection-left #theme_image {
+        position: relative;
+        width: 50vw;
+        padding: 1vw;
+        right: 40vw;
+        bottom: 0vw;
+        z-index: 1;
+    }
+    .DarkThemeSection-right {
+        width: 45vw;
+        padding: 18vh 0 0 3vw;
+    }
+    .PopularAppsSection {
+        width: 100vw;
+        transform: translateY(-120vh);
+    }
+    .PhoneImagesSection {
+        width: 100vw;
+        transform: translateY(-160vh);
+    }
+    .Testimonials {
+        display: flex;
+        width: 100vw;
+        transform: translateY(-250vh);
+        padding: 5vw;
+    }
+    .Testimonials-right img {
+        position: relative;
+        right: 10vw;
+    }
+    .review_btn {
+        width: 300px;
+        height: 55px;
+        background-color: #6953D3;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .review_btn:hover {
+        scale: 1.1;
+    }
+    .review_btn h3 {
+        color: #FFFFFF;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .promotion_btn {
+        width: 300px;
+        height: 55px;
+        gap: 1vw;
+        cursor: pointer;
+        display: flex;
+    }
+    .promotion_btn h3 {
+        color: #6953D3;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .social {
+        position: absolute;
+        display: flex;
+        gap: 1.5vw;
+        bottom: 5vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .social img {
+        width: 3vw;
+    }
 }
 
-/* Responsive Typography */
-h1 {
-    font-size: 3vw; /* Responsive font size */
-}
 
-h2 {
-    font-size: 2.5vw; /* Responsive font size */
-}
+/* Media Query for 768px screens */
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px 40px 40px 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .nav ul {
+        gap: 4vw;
+    }
 
-h3 {
-    font-size: 2vw; /* Responsive font size */
-}
+    .nav .logo img {
+        width: 12vw;
+    }
+    #Polygon1 {
+        display: none;
+    }
+    #banner_btn {
+        position: absolute;
+        width: 60px;
+        height: 25px;
+        left: 300px;
+        top: 20px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        z-index: 1;
+        color: #444444;
+    }
+    #banner_btn p {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+    }
+    #banner_emoji {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 390px;
+        top: 22px;
+        z-index: 1;
+        background: url(./Assests/SimilingEmoji.png);
+    }
+    #banner_text p {
+        font-size: 14px;
+        font-weight: 500;
+        position: absolute;
+        width: 30vw;
+        height: 70px;
+        left: 420px;
+        top: 23px;
+        color: #bdbdbd;
+        z-index: 1;
+    }
+    #banner_text span {
+        font-size: 14px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    #register_btn {
+        font-size: 15px;
+        font-weight: 500;
+        position: absolute;
+        text-decoration: underline;
+        width: 15vw;
+        height: 80px;
+        left: 750px;
+        top: 23px;
+        color: #ffffff;
+        z-index: 1;
+    }
+    .Hot {
+        position: absolute;
+        background-color: #FD000033;
+        top: 2vh;
+        left: 30vw;
+        width: 28px;
+        height: 18px;
+        border-radius: 3px;
+    }
 
-p {
-    font-size: 1.5vw; /* Responsive font size */
-}
+    #NoteroPromoSection {
+        display: flex;
+        padding: 10vw 5vw 5vw 5vw;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateY(-40vh);
+    }
+    .NoteroPromoSection-right {
+        position: relative;
+        top: 6vh;
+        right: 5vw;
+    }
+    .NoteroPromoSection-right img {
+        position: relative;
+        height: 100%;
+        width: 140%;
+        top: 2vh;
+    }
+    .NoteroPromoSection-left h5 {
+        font-size: 35px;
+        font-weight: 600;
+        width: 50vw;
+        color: #333333;
+    }
+    .NoteroPromoSection-left h6 {
+        width: 50vw;
+        font-weight: 400;
+        font-size: 16px;
+        color: #33333399;
+        margin-top: 2vh;
+    }
+    .NoteroPromoSection-left p {
+        color: #6953D3;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    #NoteroPromoSectionbuttons {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    #circle {
+        position: relative;
+        width: 4vw;
+        height: 6vh;
+        border-radius: 100px;
+        background-color: #6953D3;
+        left: 40vw;
+        bottom: 25vh;
+    }
+    .FeatureSection {
+        transform: translateY(-55vh);
+    }
+    .FeatureSection_images {
+        height: 100%;
+    }
+    #rectangle_8 {
+        width: 100vw;
+        height: 100%;
+        margin-top: 6vh;
+        margin-left: 7vw;
+        z-index: 0;
+    }
+    #rectangle_7 {
+        position: absolute;
+        top: 7vh;
+        width: 100vw;
+    }
+    #line img {
+        position: relative;
+        width: 75vw;
+        bottom: 70vh;
+        left: 5vw;
+        z-index: 2;
+    }
+    .FeatureSectiontext {
+        position: relative;
+        bottom: 75vh;
+        left: 15vw;
+    }
 
-/* Hero Section */
-#Hero_Section {
-    position: relative;
-    height: 50vh; /* Responsive height */
-    background: url('your-image.jpg') no-repeat center center/cover; /* Background image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
+    .FeatureCompanies {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        bottom: 60vh;
+        height: 10vh;
+        z-index: 2;
+    }
+    .FeatureCompanies img {
+        width: 12vw;
+    }
+    #notero_div2 {
+        bottom: 60vh;
+    }
+    .features {
+        position: relative;
+        width: 100vw;
+        height: 25vh;
+        bottom: 50vh;
+        left: 2vw;
+        z-index: 2;
+    }
+    .stroke {
+        position: relative;
+        width: 85vw;
+        height: 100%;
+        margin-left: 0vw;
+    }
+    .stroke #stroke1 {
+        position: absolute;
+        left: 20vw;
+        height: 40vh;
+    }
+    .stroke #stroke2 {
+        position: absolute;
+        left: 22vw;
+        top: 5vh;
+        height: 35vh;
+    }
+    .feature_icons {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        gap: 2vw;
+        height: 70%;
+        bottom: 15vh;
+        right: 2vw;
+    }
+    .group_icon img {
+        display: grid;
+        margin-left: 2vw;
+        padding-bottom: 2vh;
+        grid-template-columns: 1fr 1fr;
+        width: 10vw;
+    }
+    .group_icon p {
+        text-align: center;
+        font-size: 14px;
+        width: 12vw;
+        font-weight: 700;
+    }
+    .New {
+        position: relative;
+        background-color: #B4F59D;
+        height: 40px;
+        width: 40px;
+        bottom: 24vh;
+        left: 7vw;
+        border-radius: 100px;
+    }
+    .New p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.94px;
+        text-align: left;
+        color: #1A6301;
+        padding: 2vh 0 0 10px;
+    }
+    .RegisterSection {
+        transform: translateY(-85vh);
+    }
 
-/* Navigation Bar */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh 2vw; /* Responsive padding */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-}
+    .RegisterSection-right {
+        padding: 5vh 0 0 10vw;
+    }
+    .RegisterSection-right h6 {
+        color: #44444499;
+        width: 30vw;
+        font-size: 15px;
+    }
+    .group {
+        display: flex;
+        height: 6vh;
+        gap: 1vw;
+        align-items: center;
+    }
+    .group img {
+        width: 4vw;
+        height: 4vh;
+        padding: 1vh;
+        border-radius: 100px;
+        background-color: #6953D31A;
+    }
+    .group p {
+        color: #1E1E1E;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 0vh;
+    }
+    .Images #line {
+        position: absolute;
+        width: 75%;
+    }
+    .Images #bubbles {
+        position: absolute;
+        padding: 1vw;
+    }
+    .Images #Ipad {
+        position: absolute;
+        padding: 4vw;
+    }
+    .Images #Text_button {
+        position: absolute;
+        top: 15vh;
+        left: 5vw;
+        width: 220px;
+        height: 50px;
+    }
+    .SecuritySection {
+        transform: translateY(-85vh);
+    }
+    .SecuritySectionText p {
+        color: #44444499;
+        width: 35vw;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 30.01px;
+        margin-bottom: 3vh;
+    }
+    .SecuritySectionText #TextBlock {
+        width: 35vw;
+        height: 20vh;
+        border-radius: 10px;
+        background-color: #6953D326;
+        margin-bottom: 3vh;
+    }
+    #TextBlock h2 {
+        color: #4B2FD2;
+        width: 38vw;
+        padding: 1vw;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    #TextBlock span {
+        color: #4B2FD2;
+        text-align: center;
+        padding-inline: 1vw;
+        transform: rotate(180deg);
+        margin-left: 100px;
+    }
+    #TextBlock p {
+        color: #44444499;
+        padding: 1vw;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    .ReadMoreBlock {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1vw;
+        width: 20vw;
+        height: 12vh;
+    }
+    #ReadMoreBlock-group {
+        width: 30vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    #ReadMoreBlock-group h2 {
+        color: #444444;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 30.01px;
+        text-align: justify;
+    }
+    #ReadMoreBlock-group span {
+        color: #444444;
+    }
+    .ImageBlock {
+        display: flex;
+        width: 30vw;
+        height: 50vh;
+    }
+    .ImageBlock #bubble_img {
+        padding-top: 2vw;
+        border: none;
+        background-color: transparent;
+    }
+    .ImageBlock #double_phone {
+        position: relative;
+        top: 5vh;
+        right: 20vw;
+        z-index: 1;
+        border: none;
+        background-color: transparent;
+    }
+    .Chrome p {
+        color: #444444;
+        font-size: 6px;
+        font-weight: 500;
+        margin-top: 35px;
+        line-height: 14px;
+    }
 
-.nav .logo img {
-    width: 10vw; /* Responsive logo size */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav ul li {
-    margin: 0 2vw; /* Responsive margin */
-}
-
-/* Notero Promo Section */
-#NoteroPromoSection {
-    display: flex;
-    flex-direction: row; /* Default to row */
-    justify-content: space-between;
-    align-items: center;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-.NoteroPromoSection-left, .NoteroPromoSection-right {
-    flex: 1; /* Flex grow */
-    padding: 2vw; /* Responsive padding */
-}
-
-.NoteroPromoSection-right img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Feature Section */
-.FeatureSection {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: space-between;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-.FeatureSection div {
-    flex: 1 1 30%; /* Flex grow, shrink, and basis */
-    margin: 1vw; /* Responsive margin */
-}
-
-/* Register Section */
-.RegisterSection {
-    display: flex;
-    flex-direction: row; /* Default to row */
-    justify-content: space-between;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-.RegisterSection-left, .RegisterSection-right {
-    flex: 1; /* Flex grow */
-    padding: 2vw; /* Responsive padding */
-}
-
-/* Security Section */
-.SecuritySection {
-    display: flex;
-    flex-direction: row; /* Default to row */
-    justify-content: space-between;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-/* Dark Theme Section */
-.DarkThemeSection {
-    display: flex;
-    flex-direction: row; /* Default to row */
-    justify-content: space-between;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-/* Popular Apps Section */
-.PopularAppsSection {
-    display: flex;
-    flex-direction: row; /* Default to row */
-    justify-content: space-between;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-/* Testimonials Section */
-.Testimonials {
-    display: flex;
-    flex-direction: row; /* Default to row */
-    justify-content: space-between;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-/* Footer Section */
-.Footer {
-    display: flex;
-    flex-direction: row; /* Default to row */
-    justify-content: space-between;
-    padding: 5vh 2vw; /* Responsive padding */
-}
-
-/* Buttons */
-.btn_register, #download_app {
-    width: 80%; /* Full width for buttons */
-    padding: 2vh; /* Responsive padding */
-    font-size: 1.5vw; /* Responsive font size */
-    background-color: #007BFF; /* Button color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .DarkThemeSection {
+        display: flex;
+        width: 100vw;
+        transform: translateY(-100vh);
+    }
+    .DarkThemeSection-left {
+        width: 50vw;
+        display: flex;
+        padding: 7vw;
+    }
+    .DarkThemeSection-left #theme_bubble {
+        width: 40vw;
+    }
+    .DarkThemeSection-left #theme_image {
+        position: relative;
+        width: 45vw;
+        padding: 1vw;
+        right: 35vw;
+        bottom: 0vw;
+        z-index: 1;
+    }
+    .DarkThemeSection-right {
+        width: 40vw;
+        padding: 15vh 0 0 2vw;
+    }
+    .PopularAppsSection {
+        width: 100vw;
+        transform: translateY(-100vh);
+    }
+    .PhoneImagesSection {
+        width: 100vw;
+        transform: translateY(-120vh);
+    }
+    .Testimonials {
+        display: flex;
+        width: 100vw;
+        transform: translateY(-200vh);
+        padding: 5vw;
+    }
+    .Testimonials-right img {
+        position: relative;
+        right: 8vw;
+    }
+    .review_btn {
+        width: 280px;
+        height: 50px;
+        background-color: #6953D3;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .review_btn:hover {
+        scale: 1.1;
+    }
+    .review_btn h3 {
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .promotion_btn {
+        width: 280px;
+        height: 50px;
+        gap: 1vw;
+        cursor: pointer;
+        display: flex;
+    }
+    .promotion_btn h3 {
+        color: #6953D3;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .social {
+        position: absolute;
+        display: flex;
+        gap: 1.5vw;
+        bottom: 4vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .social img {
+        width: 3vw;
+    }
 }

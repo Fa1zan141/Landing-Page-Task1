@@ -53,8 +53,11 @@
                     <li>Blog</li>
                     <li>Contact</li>
                 </ul>
-                <button onclick="ProfileView()" id="profile_btn"><img src="./Assests/profile.png" alt="profile logo"></button>
-                <button onclick="Join()" id="join_btn"> <p>Join ITech Hub</p> <img src="./Assests/arrowright.png" alt="arrow"></button>
+                <div class="nav-buttons">
+                    <button onclick="ProfileView()" id="profile_btn"><div class="profile-image"></div></button>
+                    <button onclick="Join()" id="join_btn"> <p>Join ITech Hub</p> <img src="./Assests/arrowright.png" alt="arrow"></button>
+                </div>
+               
             </div>
             <!--Notero Promo Section (Promotion Related Details Here)-->
 
@@ -69,7 +72,7 @@
                     <div id="NoteroPromoSectionbuttons">
                         <button onclick="DownloadButton()" id="download_app">
                             <img src="./Assests/Apple Logo.png" alt="Apple Logo">
-                            <p>|  Download App</p>
+                            <p> &nbsp;| Download App</p>
                         </button>
                         <div class="hero_btn">
                             <button onclick="Playing()" class="PlayBtn"><img  src="./Assests/Ellipse 7.png" alt="Play"></button>
@@ -88,7 +91,7 @@
                     </div>           
                 </div>
                 <div class="NoteroPromoSection-right">
-                    <img src="./Assests/header_4 1.svg" alt="Mobiles Image">        
+                    <img src="./Assests/NeteroImage.svg" alt="Mobiles Image">        
                 </div>
             </div>
             <!--Features Section (Feature Related Details Here)-->
@@ -167,7 +170,7 @@
                     <h1>
                         The Noter For <br> <span>Creative</span> 
                     </h1>
-                    <p>Stay focused and productive with a clean clutter-free note space. the flexible ways to organize your notes: hashtags , nested notebooks , pining notes to the top of the note list, ect.</p>
+                    <h6>Stay focused and productive with a clean clutter-free note space. the flexible ways to organize your notes: hashtags , nested notebooks , pining notes to the top of the note list, ect.</h6>
                     <div class="RegisterBenefits">
                         <div class="group">
                             <img src="./Assests/ticket.svg" alt="Image">
@@ -185,8 +188,6 @@
                             <p>Free Register </p>
                         </button>
                     </div>
-                    
-
                 </div>
             </div>
             <!--Register Section (Register Related Details Here)-->
@@ -216,14 +217,16 @@
                     </div>
                     <a href="https://shorturl.at/vxvpr" target="_blank" class="Chrome">
                         <img src="./Assests/Chrome.svg" alt="Chrome">
+                        <div class="text-chrome">
                         <h2>|</h2>
                         <p>Available In The <br> <span>Chrome Web Store </span> </p>
+                        </div>
                     </a>
 
                 </div>
                 <div class="ImageBlock">
                     <img id="bubble_img" src="./Assests/about_s4_bubble2 1.svg" alt="">
-                    <img id="double_phone" src="./Assests/2mobiles 1.svg" alt="">
+                    <img id="double_phone" src="./Assests/2mobiles 1.png" alt="">
 
                 </div>
             </div>
@@ -241,9 +244,9 @@
                         Focus More With <br>
                         <span>Dark Theme</span>
                     </h1>
-                    <p>
+                    <h6>
                         Apply Notero’s elegant themes to your taste. Dark themes work excellently for those who prefer distraction-free mode.
-                    </p>
+                    </h6>
                     <ul>
                         <li>Filtering notes using matched keywords</li>
                         <li> <span>8 Beautiful themes for you select</span></li>
@@ -296,7 +299,7 @@
             <div class="Testimonials">
                 <div class="Testimonials-left">
                     <div id="Testimonials-text" >
-                        <p>Testimonials</p>
+                        <h5>Testimonials</h5>
                     </div> 
                     <h1>Loved From <span>Customers</span> </h1>
                     <p>Notero loved from thoudsands customer worldwide and <br> get trusted from big companies.</p>
